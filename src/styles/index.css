@@ -1,0 +1,46 @@
+/* 
+    General Styles
+*/
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+.app-background {
+    background-image: url('../img/sw-bg.jpg'), url('../img/sw-space.jpg'); 
+    background-size: cover, auto; 
+    background-position: center, left top; 
+    background-repeat: no-repeat, repeat; 
+    min-height: 100vh; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex-grow: 1; /* Este div crecerá para ocupar el espacio disponible */
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.suggestions {
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: #333; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px; 
+    z-index: 1000; 
+}
+
+.suggestion-item {
+    padding: 5px 10px; 
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #e0e0e0; 
+}
+
